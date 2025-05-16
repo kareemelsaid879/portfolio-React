@@ -1,0 +1,12 @@
+.portCard {
+    width: 20vw;
+    height: 25vh;
+}
+
+@media screen and (max-width: 430px) {
+    .portCard {
+        width: 50vw;
+        height: 25vh;
+    }
+
+}

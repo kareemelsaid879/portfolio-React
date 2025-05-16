@@ -1,0 +1,17 @@
+.bg-cover {
+    background-image: url('../assets/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.coverData {
+    top: 30%;
+}
+
+.themeSwitcher {
+    top: 10px;
+    right: 10px;
+}
