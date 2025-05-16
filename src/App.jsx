@@ -9,12 +9,12 @@ import Spinner from './Components/spinner.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
-  // const [theme, setTheme] = useState('light');
-  // var myTheme = 'bg-light'
+  const [theme, setTheme] = useState('light')
 
-  // const toggleTheme = (prevtheme) => {
-  //   setTheme(prevtheme === 'bg-light' ? myTheme = 'dark' : myTheme = 'bg-light');
-  // }
+  const toggleTheme = () => {
+    setTheme((prevtheme) => prevtheme == 'light' ? 'dark' : 'light')
+    console.log(theme)
+  }
 
   useEffect(() => {
     let loading = setTimeout(() => {
@@ -37,10 +37,10 @@ function App() {
           :
           (
             <>
-              <Hero />
-              <About />
-              <Skills />
-              <Portfolio />
+              <Hero curTheme={theme} toggleTheme={toggleTheme} />
+              <About curTheme={theme} />
+              <Skills curTheme={theme} />
+              <Portfolio curTheme={theme} />
             </>
           )
 
